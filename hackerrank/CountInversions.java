@@ -1,16 +1,6 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
+import java.util.List;
 
-class Result {
+public class CountInversions {
 
     /*
      * Complete the 'countInversions' function below.
@@ -18,28 +8,31 @@ class Result {
      * The function is expected to return a LONG_INTEGER.
      * The function accepts INTEGER_ARRAY arr as parameter.
      */
-/*
-* @source https://www.hackerrank.com/challenges/ctci-merge-sort/problem
-* @author xiaoque55
-* @date 2021.06.13
-
-*/
+    /*
+     * @source https://www.hackerrank.com/challenges/ctci-merge-sort/problem
+     * 
+     * @author xiaoque55
+     * 
+     * @date 2021.06.13
+     * 
+     */
     public static long countInversions(List<Integer> arr) {
-    // Write your code here
+        // Write your code here
         int[] tmpArr = new int[arr.size()];
         return mergeSort(arr, 0, arr.size() - 1, tmpArr);
     }
-    
-    // Passing the temp array can reduce the running time comparing to create a new one at each call
+
+    // Passing the temp array can reduce the running time comparing to create a new
+    // one at each call
     public static long mergeSort(List<Integer> arr, int left, int right, int[] tmpArr) {
-        if (left >= right) return 0L;
-        
-        int mid  = left + (right - left) / 2;
+        if (left >= right)
+            return 0L;
+
+        int mid = left + (right - left) / 2;
         return mergeSort(arr, left, mid, tmpArr)
                 + mergeSort(arr, mid + 1, right, tmpArr)
                 + merge(arr, left, mid, right, tmpArr);
     }
-    
 
     public static long merge(List<Integer> arr, int left, int mid, int right, int[] tmpArr) {
         long count = 0;
