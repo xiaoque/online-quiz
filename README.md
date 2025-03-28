@@ -59,11 +59,15 @@
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|Recursion with memo|Med| [Solution](src/leetcode/ValidateBinarySearchTree.java)|
 |[090. K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/)|Sliding window|Med| [Solution](src/leetcode/KRadiusSubarrayAverages.java) |
 |[209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|Sliding window|Med| [Solution](src/leetcode/MinimumSizeSubarraySum.java) |
+|[480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)|Sliding window, heap|Hard| [Solution](src/leetcode/SlidingWindowMedian.java) |
+|[863. All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)|Tree, BFS|Med| [Solution](src/leetcode/AllNodesDistanceKBinaryTree.java) |
+|[2221. Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/)|Array|Med| [Solution](src/leetcode/TriangularSum.java) |
+|[875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)|Binary search|Med| [Solution](src/leetcode/KokoEatingBananas.java) |
+|[77. Combinations](https://leetcode.com/problems/combinations/)|backtracking|Med| [Solution](src/leetcode/) |
 |||| [Solution](src/leetcode/) |
 |||| [Solution](src/leetcode/) |
 |||| [Solution](src/leetcode/) |
-|||| [Solution](src/leetcode/) |
-|||| [Solution](src/leetcode/) |
+||||  |
 
 
 
@@ -84,11 +88,17 @@
 |[1679. Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)|Hash, 2 pointers|Med| [Solution](src/leetcode/MaxNumKSumPairs.java)|
 |[643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)|Sliding window|Easy| [Solution](src/leetcode/MaximumAverageSubarrayI.java) |
 |[1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)|Sliding window|Med| [Solution](src/leetcode/MaximumNumberVowelsInSubstring.java) |
-|||| [Solution](src/leetcode/)|
-|||| [Solution](src/leetcode/) |
-|||| [Solution](src/leetcode/) |
-|||| [Solution](src/leetcode/) |
-|||| [Solution](src/leetcode/) |
+|[1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)|Sliding window|Med| [Solution](src/leetcode/MaxConsecutiveOnesIII.java) |
+|[1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)|Sliding window|Med| [Solution](src/leetcode/LongestSubarrayAfterDeletingOneElement.java) |
+|[1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)|Prefix number|Easy| [Solution](src/leetcode/FindHighestAltitude.java) |
+|[724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)|Prefix|Easy| [Solution](src/leetcode/FindPivotIndex.java) |
+|[2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)|Hash, set|Easy| [Solution](src/leetcode/FindDifferenceTwoArrays.java) |
+|[1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)|Hash|Easy| [Solution](src/leetcode/UniqueNumberOccurrences.java) |
+|[1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)||Med| [Solution](src/leetcode/DetermineTwoStringsAreClose.java) |
+|[2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/)|Hash|Med| [Solution](src/leetcode/EqualRowColumnPairs.java) |
+|[437. Path Sum III](https://leetcode.com/problems/path-sum-iii/)||| [Solution](src/leetcode/) |
+||||  |
+||||  |
 
 
 
