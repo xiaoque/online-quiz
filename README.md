@@ -64,10 +64,14 @@
 |[2221. Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/)|Array|Med| [Solution](src/leetcode/TriangularSum.java) |
 |[875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)|Binary search|Med| [Solution](src/leetcode/KokoEatingBananas.java) |
 |[77. Combinations](https://leetcode.com/problems/combinations/)|backtracking|Med| [Solution](src/leetcode/) |
+|[1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)|Dp, binary search|Hard| [Solution](src/leetcode/MaxProfitInJobScheduling.java) |
+|[198. House Robber](https://leetcode.com/problems/house-robber/)|dp|Med| [Solution](src/leetcode/https://leetcode.com/problems/house-robber/.java) |
+|[1751. Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)|2d-dp|Hard| [Solution](src/leetcode/MaximumNumberEventsCanBeAttendedII.java) |
+|[239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|Sliding windows, Queue|Hard| [Solution](src/leetcode/SlidingWindowMaximun.java) |
 |||| [Solution](src/leetcode/) |
 |||| [Solution](src/leetcode/) |
 |||| [Solution](src/leetcode/) |
-||||  |
+|||| [Solution](src/leetcode/) |
 
 
 
@@ -97,7 +101,8 @@
 |[1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)||Med| [Solution](src/leetcode/DetermineTwoStringsAreClose.java) |
 |[2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/)|Hash|Med| [Solution](src/leetcode/EqualRowColumnPairs.java) |
 |[437. Path Sum III](https://leetcode.com/problems/path-sum-iii/)||| [Solution](src/leetcode/) |
-||||  |
+|||| [Solution](src/leetcode/) |
+|||| [Solution](src/leetcode/) |
 ||||  |
 
 
