@@ -39,7 +39,7 @@
 |[622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)|Data structure|Med| [Solution](MyCircularQueue.java)|
 |[1232. Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/description/)|Math|Easy| [Solution](CheckStraightLine.java)|
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|Recursion with memo|Med| [Solution](ValidateBinarySearchTree.java)|
-|[090. K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/)|Sliding window|Med| [Solution](KRadiusSubarrayAverages.java) |
+|[2090. K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/)|Sliding window|Med| [Solution](KRadiusSubarrayAverages.java) |
 |[209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|Sliding window|Med| [Solution](MinimumSizeSubarraySum.java) |
 |[480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)|Sliding window, heap|Hard| [Solution](SlidingWindowMedian.java) |
 |[863. All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)|Tree, BFS|Med| [Solution](AllNodesDistanceKBinaryTree.java) |
@@ -50,7 +50,7 @@
 |[198. House Robber](https://leetcode.com/problems/house-robber/)|dp|Med| [Solution](https://leetcode.com/problems/house-robber/.java) |
 |[1751. Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)|2d-dp|Hard| [Solution](MaximumNumberEventsCanBeAttendedII.java) |
 |[239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|Sliding windows, Queue|Hard| [Solution](SlidingWindowMaximun.java) |
-|||| [Solution]() |
+|[131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)|Backtracking, dp|Medium| [Solution](PalindromePartitioning.java) |
 |||| [Solution]() |
 |||| [Solution]() |
 |||| [Solution]() |

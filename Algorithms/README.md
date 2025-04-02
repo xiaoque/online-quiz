@@ -221,12 +221,9 @@ void slidingWindows(args){
 
 Practice: 
 
-* [209. Minimum Size Subarray Sum](Sliding windows/209. Minimum Size Subarray Sum.md)
-
-* [480. Sliding Window Median](Sliding windows/480. Sliding Window Median.md)
-
-* [2090. K Radius Subarray Averages](Sliding windows/2090. K Radius Subarray Averages.md)
-
+* [209. Minimum Size Subarray Sum](./Sliding%20windows/209.%20Minimum%20Size%20Subarray%20Sum.md)
+* [480. Sliding Window Median](./Sliding%20windows/480.%20Sliding%20Window%20Median.md)
+* [2090. K Radius Subarray Averages](./Sliding%20windows/2090.%20K%20Radius%20Subarray%20Averages.md)
   
 
 ## Backtracking 
@@ -256,8 +253,8 @@ void backtracking (args) {
 
 Practice:
 
-* [77. Combinations](Backtracking/77. Combinations.md)
-* [131. Palindrome Partitioning](Backtracking/131. Palindrome Partitioning.md)
+* [77. Combinations](./Backtracking/77.%20Combinations.md)
+* [131. Palindrome Partitioning](./Backtracking/131.%20Palindrome%20Partitioning.md)
 
 ## Dynamic Programming
 
@@ -268,8 +265,8 @@ Practice:
 
 Practice:
 
-* [647. Palindromic Substrings](Dynamic programming/647. Palindromic Substrings.md)
-  * Same idea combined with backtracking check [131. Palindrome Partitioning](Backtracking/131. Palindrome Partitioning.md)
+* [647. Palindromic Substrings](./Dynamic%20Programming/647.%20Palindromic%20Substrings.md)
+  * Same idea combined with backtracking check [131. Palindrome Partitioning](./Backtracking/131.%20Palindrome%20Partitioning.md)
 
 ## Others
 
