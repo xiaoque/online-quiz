@@ -1,0 +1,89 @@
+
+## LeetCode  
+
+|Description| Label | Difficulty|Solution|
+|:---|:---|:---|:---|
+|[3. Longest Substring Without Repeating Charracters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | String, Hash, Sliding Windows| Med| [Solution](LongestSubstring.java)|
+|[408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/)| String, 2 pointers | Easy| [Solution](ValidWordAbbreviation.java)|
+|[4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)||Hard| [Solution](MedianSortedArray.java)|
+|[28. Find the index of the first occurrence in a string](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)|substring|Easy| [Solution](IndexOfFirstOccurrence.java)|
+|[27. Remove Element](https://leetcode.com/problems/remove-element/)|2 pointers|Easy| [Solution](RemoveElement.java)|
+|[459. Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|String function|Easy| [Solution](RepeatedSubstringPattern.java)|
+|[1275. Find Winner on a Tic Tac Toe Game](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/)|Matrix|Easy| [Solution](TicTacToe.java)|
+|[657. Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|Switch|Easy| [Solution](RobotReturnToOrigin.java)|
+|[54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|Matrix|Med| [Solution](SpiralMatrix.java)|
+|[682. Baseball Game](https://leetcode.com/problems/baseball-game/description/)|Stack|| [Solution](BaseballGame.java)|
+|[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)|Simulation|Easy| [Solution](RomanToInt.java)|
+|[896. Monotonic Array](https://leetcode.com/problems/monotonic-array/description/)|| Easy| [Solution](MonotonicArray.java)|
+|[73. Set Matrix Zeros](https://leetcode.com/problems/set-matrix-zeroes/)|In place modification|Med| [Solution](SetMatrixZeros.java)|
+|[860. Lemonade-change](https://leetcode.com/problems/lemonade-change/)|Simulation|Easy| [Solution](LemonadeChange.java)|
+|[67. Add Binary](https://leetcode.com/problems/add-binary/)||Easy| [Solution](AddBinary.java)|
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Linked List|Easy| [Solution](ReverseLinkedList.java)|
+|[445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)|Linked List|Med| [Solution](AddTwoNumbers.java)|
+|[167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|2 pointers|Med| [Solution](TwoSumII.java)|
+|[136. Single Number](https://leetcode.com/problems/single-number/)|XOR|Easy| [Solution](SingleNumber.java)|
+|[637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/) |BFS, Queue| Easy| [Solution](AverageLevelsBinaryTree.java)|
+|[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|dp, Greedy|Med| [Solution](BestTimeToBuyAndSellStockII.java)|
+|[112. Path Sum](https://leetcode.com/problems/path-sum/)|Recursion, Tree|Easy| [Solution](PathSum.java)|
+|[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)|Recursion with memo|Easy| [Solution](FibonacciNumber.java)|
+|[322. Coin Change](https://leetcode.com/problems/coin-change/)|Recursion with memo|Med| [Solution](CoinChange.java)|
+|[300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)|Recursion with memo|Med| [Solution](LongestIncreasingSubsequence.java)|
+|[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Recursion with memo|Med| [Solution](MinimumPathSum.java)|
+|[1452. People Whose List of Favorite Companies Is Not a Subset of Another List/](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/description/)|Hash|Med| [Solution](PeopleWhoseFavoriteCompaniesIsNotSubset.java)|
+|[79. Word Search](https://leetcode.com/problems/word-search/description/)|Recursion with memo|Med| [Solution](WordSearch.java)|
+|[1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|pos-order, Recursion with memo|Med| [Solution](BinarySearchTreeToGreaterSumTree.java)|
+|[1305. All Elements In Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/)|Tree, Recursion with memo|Med| [Solution](AllElementsInTwoBinarySearchTrees.java)|
+|[1160. Find Words that Can Be Formed by Charcaters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)||Easy| [Solution](FindWordsCanBeFormedByCharcaters.java)|
+|[2451. Odd String Difference](https://leetcode.com/problems/odd-string-difference/)||Easy| [Solution](OddStringDifference.java)|
+|[819. Most Common Word](https://leetcode.com/problems/most-common-word/)|Hash|Easy| [Solution](MostCommonWord.java)|
+|[622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)|Data structure|Med| [Solution](MyCircularQueue.java)|
+|[1232. Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/description/)|Math|Easy| [Solution](CheckStraightLine.java)|
+|[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|Recursion with memo|Med| [Solution](ValidateBinarySearchTree.java)|
+|[090. K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/)|Sliding window|Med| [Solution](KRadiusSubarrayAverages.java) |
+|[209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|Sliding window|Med| [Solution](MinimumSizeSubarraySum.java) |
+|[480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)|Sliding window, heap|Hard| [Solution](SlidingWindowMedian.java) |
+|[863. All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)|Tree, BFS|Med| [Solution](AllNodesDistanceKBinaryTree.java) |
+|[2221. Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/)|Array|Med| [Solution](TriangularSum.java) |
+|[875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)|Binary search|Med| [Solution](KokoEatingBananas.java) |
+|[77. Combinations](https://leetcode.com/problems/combinations/)|backtracking|Med| [Solution]() |
+|[1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)|Dp, binary search|Hard| [Solution](MaxProfitInJobScheduling.java) |
+|[198. House Robber](https://leetcode.com/problems/house-robber/)|dp|Med| [Solution](https://leetcode.com/problems/house-robber/.java) |
+|[1751. Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)|2d-dp|Hard| [Solution](MaximumNumberEventsCanBeAttendedII.java) |
+|[239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|Sliding windows, Queue|Hard| [Solution](SlidingWindowMaximun.java) |
+|||| [Solution]() |
+|||| [Solution]() |
+|||| [Solution]() |
+|||| [Solution]() |
+
+
+
+### LeetCode 75
+
+|Description| Label | Difficulty|Solution|
+|:---|:---|:---|:---|
+|[1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)|2 pointers|Easy| [Solution](MergeStringAlternately.java)|
+|[1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|Math|Easy| [Solution](GreatestCommonDivisorStrings.java)|
+|[605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)||Easy| [Solution](CanPlaceFlowers.java)|
+|[345. Reverse Vowels of a String](http://leetcode.com/problems/reverse-vowels-of-a-string/)|2 pointers|Easy| [Solution](ReverseVowelsString.java)|
+|[151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|StringBuilder, 2 pointers|Med| [Solution](ReverseWordsInString.java)|
+|[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)||Med| [Solution](ProductArrayExceptSelf.java)|
+|[334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)||Med| [Solution](IncreasingTripletSubsequence.java)|
+|[443. String Compression](https://leetcode.com/problems/string-compression/)|2 pointers|Med| [Solution](StringCompression.java)|
+|[283. Moving zeros](https://leetcode.com/problems/move-zeroes/)|2 pointers|Easy| [Solution](MovingZeros.java)|
+|[11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|| Med| [Solution](ContainerWithMostWater.java)|
+|[1679. Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)|Hash, 2 pointers|Med| [Solution](MaxNumKSumPairs.java)|
+|[643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)|Sliding window|Easy| [Solution](MaximumAverageSubarrayI.java) |
+|[1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)|Sliding window|Med| [Solution](MaximumNumberVowelsInSubstring.java) |
+|[1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)|Sliding window|Med| [Solution](MaxConsecutiveOnesIII.java) |
+|[1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)|Sliding window|Med| [Solution](LongestSubarrayAfterDeletingOneElement.java) |
+|[1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)|Prefix number|Easy| [Solution](FindHighestAltitude.java) |
+|[724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)|Prefix|Easy| [Solution](FindPivotIndex.java) |
+|[2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)|Hash, set|Easy| [Solution](FindDifferenceTwoArrays.java) |
+|[1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)|Hash|Easy| [Solution](UniqueNumberOccurrences.java) |
+|[1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)||Med| [Solution](DetermineTwoStringsAreClose.java) |
+|[2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/)|Hash|Med| [Solution](EqualRowColumnPairs.java) |
+|[437. Path Sum III](https://leetcode.com/problems/path-sum-iii/)||| [Solution]() |
+|||| [Solution]() |
+|||| [Solution]() |
+||||  |
+
