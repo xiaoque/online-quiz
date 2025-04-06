@@ -65,7 +65,7 @@
 |[198. House Robber](https://leetcode.com/problems/house-robber/)|dp|Med| [Solution](leetcode/https://leetcode.com/problems/house-robber/.java) |
 |[1751. Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)|2d-dp|Hard| [Solution](leetcode/MaximumNumberEventsCanBeAttendedII.java) |
 |[239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|Sliding windows, Queue|Hard| [Solution](leetcode/SlidingWindowMaximun.java) |
-|||| [Solution](leetcode/) |
+|[131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)|Backtracking, dp|Medium| [Solution](leetcode/PalindromePartitioning.java) |
 |||| [Solution](leetcode/) |
 |||| [Solution](leetcode/) |
 |||| [Solution](leetcode/) |
@@ -98,9 +98,17 @@
 |[1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)||Med| [Solution](leetcode/DetermineTwoStringsAreClose.java) |
 |[2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/)|Hash|Med| [Solution](leetcode/EqualRowColumnPairs.java) |
 |[437. Path Sum III](https://leetcode.com/problems/path-sum-iii/)||| [Solution](leetcode/) |
+|[2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/)|Stack|Med| [Solution](leetcode/RemovingStarsFromString.java) |
+|[735. Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)|Stack|Med| [Solution](leetcode/AsteroidCollision.java) |
+|[1372. Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)|DFS|Med| [Solution](leetcode/LongestZigZagPathInBinaryTree.java) |
+|[236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|DFS|Med| [Solution](leetcode/LowestCommonAncestorBinaryTree.java) |
+|[199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)|BFS|Med| [Solution](leetcode/BinaryTreeRightSideView.java) |
+|[1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)|BFS|Med| [Solution](leetcode/MaximumLevelSumBinaryTree.java) |
+|[841. Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)|DFS|Med| [Solution](leetcode/KeysAndRooms.java) |
+|[547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/)|DFS|Med| [Solution](leetcode/) |
 |||| [Solution](leetcode/) |
 |||| [Solution](leetcode/) |
-||||  |
+|||| [Solution](leetcode/) |
 
 
 

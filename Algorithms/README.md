@@ -45,7 +45,9 @@ void postorder(args...){
 }
 ```
 
+Practice:
 
+* 
 
 #### BFS
 
@@ -166,7 +168,7 @@ while(left < right){
 
 Practice:
 
-* [875. Koko Eating Bananas]
+* [875. Koko Eating Bananas](./Binary%20search/875.%20Koko%20Eating%20Bananas.md)
 * 
 
 ## Two pointers
