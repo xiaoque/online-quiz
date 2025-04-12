@@ -106,8 +106,8 @@
 |[1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)|BFS|Med| [Solution](leetcode/MaximumLevelSumBinaryTree.java) |
 |[841. Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)|DFS|Med| [Solution](leetcode/KeysAndRooms.java) |
 |[547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/)|DFS|Med| [Solution](leetcode/) |
-|||| [Solution](leetcode/) |
-|||| [Solution](leetcode/) |
+|[1466. Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)|DFS, adjacency list|Med| [Solution](leetcode/ReorderRoutesMakeAllPathsLeadToCityZero.java) |
+|[399. Evaluate Division](https://leetcode.com/problems/evaluate-division/)|DFS, adjacency map|Med| [Solution](leetcode/) |
 |||| [Solution](leetcode/) |
 
 

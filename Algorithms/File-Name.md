@@ -1,8 +1,8 @@
 | Created  | Difficulty | Tags |
 | -------- | ---------- | ---- |
-| {{date}} |            |      |
+| 2025-04-12 |            |      |
 
-
+file name
 
 
 
