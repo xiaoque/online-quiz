@@ -47,7 +47,8 @@ void postorder(args...){
 
 Practice:
 
-* 
+* Longest path:  [1372.Longest-Zigzag-Path-In-A-Binary-Tree.md](Tree-Traversal/1372.Longest-Zigzag-Path-In-A-Binary-Tree.md) 
+*  [1466.Reorder-Routes-To-Make-All-Paths-Lead-To-The-City-Zero.md](Graph/1466.Reorder-Routes-To-Make-All-Paths-Lead-To-The-City-Zero.md) 
 
 #### BFS
 
@@ -73,7 +74,9 @@ void bfs(TreeNode node) {
 }
 ```
 
+Practice:
 
+* Get shortest path:  [1926.Nearest-exit-from-entrance-in-maze.md](Graph/1926.Nearest-exit-from-entrance-in-maze.md) 
 
 ## Sort
 
@@ -136,39 +139,55 @@ merge the array from left to middle and middle to right
 
 #### Binary search
 
-In range [0, n], compare value of mid to target; if target is smaller than mid, then redo the check for range (left, mid); otherwise, redo the check for range (mid, right).
+In an array of size n, to find target value, divide the array into 2 parts from middle then verify the middle value. If the target is smaller than middle, then continue the search within left part; otherwise, continue the search within right part. Restrict the range recurssively until find the result.
 
 > Possible improvement for calculating mid, when left and right are non-negative values, use overflow resisted right shift.
 >
 > ​		**mid = (left + right) >>> 1**
 
+Depending on the right boundary, there are 2 options.
+
+1. Search in [left, right]
+   * Initialize left = 0, right  = n - 1, with while condition left **<=** right.
+   * Update right value with mid - 1
+2. Search in [left, right)
+   * Initlialize left = 0, right = n, with while condition left < right
+   * Since nums[right] is not considered, update right with value mid
+
 ```java
 // opt1
 while(left <= right){
   mid = left + (right - left) / 2;
-  if(arr[mid] == x) return mid;
-  if(arr[mid] > x) right = mid - 1;
-  left = mid + 1;
+  // find target
+  if(arr[mid] == target) return mid;
+  // target is in left part, [left, mid - 1]
+  if(arr[mid] > target) right = mid - 1;
+  // target is in right part, [mid + 1, right]
+  else left = mid + 1;
 }
 
-// opt2: condition in while changed, then right value changes also
+// opt2
 while(left < right){
   mid = left + (right - left) / 2;
-  if(arr[mid] > x) right = mid;
-  left = mid + 1;
+  // find target
+  if(arr[mid] == target) return mid;
+  // target is in left part, [left, mid)
+  if(arr[mid] > target) right = mid;
+  // target is in right part, [mid + 1, right)
+  else left = mid + 1;
 }
 
 // opt2: more common case: find min index that satisfy condition(k)
 while(left < right){
   mid = left + (right - left) / 2;
   if(condition(mid)) right = mid;
-  left = mid + 1;
+  else left = mid + 1;
 }
 ```
 
 Practice:
 
-* [875. Koko Eating Bananas](./Binary%20search/875.%20Koko%20Eating%20Bananas.md)
+* [875. Koko Eating Bananas](./Binary-Search/875.Koko-Eating-Bananas.md)
 * 
 
 ## Two pointers
@@ -223,10 +242,9 @@ void slidingWindows(args){
 
 Practice: 
 
-* [209. Minimum Size Subarray Sum](./Sliding%20windows/209.%20Minimum%20Size%20Subarray%20Sum.md)
-* [480. Sliding Window Median](./Sliding%20windows/480.%20Sliding%20Window%20Median.md)
-* [2090. K Radius Subarray Averages](./Sliding%20windows/2090.%20K%20Radius%20Subarray%20Averages.md)
-  
+*  [209.Minimum-Size-Subarray-Sum.md](Sliding-Windows/209.Minimum-Size-Subarray-Sum.md) 
+*  [480.Sliding-Window-Median.md](Sliding-Windows/480.Sliding-Window-Median.md) 
+*  [2090.K-Radius-Subarray-Averages.md](Sliding-Windows/2090.K-Radius-Subarray-Averages.md) 
 
 ## Backtracking 
 
@@ -255,8 +273,8 @@ void backtracking (args) {
 
 Practice:
 
-* [77. Combinations](./Backtracking/77.%20Combinations.md)
-* [131. Palindrome Partitioning](./Backtracking/131.%20Palindrome%20Partitioning.md)
+*  [77.Combinations.md](Backtracking/77.Combinations.md) 
+*  [131.Palindrome-Partitioning.md](Backtracking/131.Palindrome-Partitioning.md) 
 
 ## Dynamic Programming
 
@@ -267,8 +285,8 @@ Practice:
 
 Practice:
 
-* [647. Palindromic Substrings](./Dynamic%20Programming/647.%20Palindromic%20Substrings.md)
-  * Same idea combined with backtracking check [131. Palindrome Partitioning](./Backtracking/131.%20Palindrome%20Partitioning.md)
+*  [647.Palindromic-Substrings.md](Dynamic-Programming/647.Palindromic-Substrings.md) 
+  * Same idea combined with the problem of backtracking  [131.Palindrome-Partitioning.md](Backtracking/131.Palindrome-Partitioning.md) 
 
 ## Others
 
