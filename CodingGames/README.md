@@ -66,9 +66,10 @@
 |[1751. Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)|2d-dp|Hard| [Solution](leetcode/MaximumNumberEventsCanBeAttendedII.java) |
 |[239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|Sliding windows, Queue|Hard| [Solution](leetcode/SlidingWindowMaximun.java) |
 |[131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)|Backtracking, dp|Medium| [Solution](leetcode/PalindromePartitioning.java) |
+|[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|Sliding windows|Hard| [Solution](leetcode/MinimumWindowSubstring.java) |
 |||| [Solution](leetcode/) |
-|||| [Solution](leetcode/) |
-|||| [Solution](leetcode/) |
+||||  |
+||||  |
 
 
 
@@ -108,11 +109,21 @@
 |[547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/)|DFS|Med| [Solution](leetcode/) |
 |[1466. Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)|DFS, adjacency list|Med| [Solution](leetcode/ReorderRoutesMakeAllPathsLeadToCityZero.java) |
 |[399. Evaluate Division](https://leetcode.com/problems/evaluate-division/)|DFS, adjacency map|Med| [Solution](leetcode/) |
+|[1926. Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|BFS, graph|Med| [Solution](leetcode/NearestExitfromEntranceMaze.java) |
+|[162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)|Binary search|Med| [Solution](leetcode/FindPeakElement.java) |
+|[17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|Backtracking|Med| [Solution](leetcode/LetterCombinationsPhoneNumber.java) |
+|[790. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/)|dp|Med| [Solution](leetcode/DominoTrominoTiling.java) |
+|[62. Unique Paths](https://leetcode.com/problems/unique-paths/)|dp|Med| [Solution](leetcode/UniquePaths.java) |
+|[1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)|2d-dp|Med| [Solution](leetcode/LongestCommonSubsequence.java) |
+|[2542. Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/)|Priority queue, sliding window|Med| [Solution](leetcode/MaximumSubsequenceScore.java) |
+|[2462. Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/)|Priority queue|Med| [Solution](leetcode/TotaCostHireKWorkers.java) |
+|||| [Solution](leetcode/) |
 |||| [Solution](leetcode/) |
 
 
 
-## Practices
+## Others
+
 |Description | Label |  
 |:---|:---|
 |[Race games](practice/MultiThread.java) | Thread, Runnable

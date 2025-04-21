@@ -245,6 +245,7 @@ Practice:
 *  [209.Minimum-Size-Subarray-Sum.md](Sliding-Windows/209.Minimum-Size-Subarray-Sum.md) 
 *  [480.Sliding-Window-Median.md](Sliding-Windows/480.Sliding-Window-Median.md) 
 *  [2090.K-Radius-Subarray-Averages.md](Sliding-Windows/2090.K-Radius-Subarray-Averages.md) 
+*   [76.Minimum-Window-Substring.md](Sliding-Windows/76.Minimum-Window-Substring.md) 
 
 ## Backtracking 
 
@@ -287,6 +288,7 @@ Practice:
 
 *  [647.Palindromic-Substrings.md](Dynamic-Programming/647.Palindromic-Substrings.md) 
   * Same idea combined with the problem of backtracking  [131.Palindrome-Partitioning.md](Backtracking/131.Palindrome-Partitioning.md) 
+*  2d-array  [62.Unique-Paths.md](Dynamic-Programming/62.Unique-Paths.md) 
 
 ## Others
 
