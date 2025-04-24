@@ -1,6 +1,11 @@
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/*
+ * @source https://leetcode.com/problems/minimum-window-substring/
+ * @author xiaoque
+ * @date 2025.04.21
+ */
 public class MinimumWindowSubstring {
     public String minWindow(String s, String t) {
         // get freq of chars in t
@@ -20,7 +25,7 @@ public class MinimumWindowSubstring {
             if (freq.get(c) == 0)
                 count--;
 
-            // move left forward when count = 0
+            // move left while count = 0
             if (count == 0) {
                 c = s.charAt(left);
                 while (freq.get(c) < 0) {
@@ -34,7 +39,7 @@ public class MinimumWindowSubstring {
                     start = left;
                 }
 
-                // move left forward to find next window
+                // move left to find next window
                 freq.put(c, freq.get(c) + 1);
                 left++;
                 count++;

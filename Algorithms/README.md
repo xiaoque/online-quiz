@@ -52,7 +52,7 @@ Practice:
 
 #### BFS
 
-use queue with 2-layer loop
+Use queue with 2-layer loop
 
 ```java
 void bfs(TreeNode node) {

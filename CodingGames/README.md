@@ -67,8 +67,12 @@
 |[239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|Sliding windows, Queue|Hard| [Solution](leetcode/SlidingWindowMaximun.java) |
 |[131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)|Backtracking, dp|Medium| [Solution](leetcode/PalindromePartitioning.java) |
 |[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|Sliding windows|Hard| [Solution](leetcode/MinimumWindowSubstring.java) |
+|[3522. Calculate Score After Performing Instructions](https://leetcode.com/problems/calculate-score-after-performing-instructions/)|Simulation|Med| [Solution](leetcode/CalculateScoreAfterPerformingInstructions.java) |
+|https://leetcode.com/problems/implement-trie-ii-prefix-tree/|Trie, simulation|Med| [Solution](leetcode/ImplementTrie.java) |
+|[460. LFU Cache](https://leetcode.com/problems/lfu-cache/)|Simulation|Hard| [Solution](leetcode/LFUCache.java) |
 |||| [Solution](leetcode/) |
-||||  |
+|||| [Solution](leetcode/) |
+|||| [Solution](leetcode/) |
 ||||  |
 
 
@@ -117,8 +121,14 @@
 |[1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)|2d-dp|Med| [Solution](leetcode/LongestCommonSubsequence.java) |
 |[2542. Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/)|Priority queue, sliding window|Med| [Solution](leetcode/MaximumSubsequenceScore.java) |
 |[2462. Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/)|Priority queue|Med| [Solution](leetcode/TotaCostHireKWorkers.java) |
+|[208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)|Trie, Simulation|Med| [Solution](leetcode/) |
+|[1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/)|2 pointers,|Med| [Solution](leetcode/SearchSuggestionsSystem) |
+|[435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|Greedy|Med| [Solution](leetcode/NonOverlappingIntervals.java) |
+|[452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)|Greedy, interval|Med| [Solution](leetcode/) |
 |||| [Solution](leetcode/) |
 |||| [Solution](leetcode/) |
+|||| [Solution](leetcode/) |
+||||  |
 
 
 
