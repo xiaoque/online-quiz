@@ -1,3 +1,28 @@
+## Bit manipulations
+
+| Operation            | Symbol | Description                                     |
+| :------------------- | :----- | :---------------------------------------------- |
+| AND                  | `&`    | 1 if both bits are 1                            |
+| OR                   | `|`    | 1 if either bit is 1                            |
+| XOR                  | `^`    | 1 if bits are different                         |
+| NOT                  | `~`    | Flips all bits                                  |
+| Left Shift           | `<<`   | Shifts bits left (adds zeros on the right)      |
+| Right Shift          | `>>`   | Shifts bits right (keeps sign bit)              |
+| Unsigned Right Shift | `>>>`  | Shifts right (fills with 0s regardless of sign) |
+
+* **Check odd / even** : `num & 1 == 0`  => even,  (and on last bit)
+* **Multiply or Divide by 2** : `n >>1 == n / 2` , ` n << 1 == n * 2`
+* **Check duplicate**: `a ^ a == 0, a ^ 0 == a`
+
+Functions:
+
+* `Integer.bitCount(n)` → counts the number of set bits
+* `Integer.toBinaryString(n)` → shows binary string
+* `Integer.highestOneBit(n)` → gets highest one bit
+* `Integer.lowestOneBit(n)` → gets lowest one bit
+
+Practice:  [1318.Minimum-Flips-To-Make-A-Or-B-Equal-To-C.md](1318.Minimum-Flips-To-Make-A-Or-B-Equal-To-C.md) 
+
 ## Data Structure
 
 ### Heap
@@ -14,6 +39,46 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder())
 ```
 
 ### Deque
+
+### Linkded list
+
+
+
+#### Find middle node for a linked list
+
+
+
+#### Revert a linked list
+
+#### Detect a loop in linked list
+
+When a linked list contains a cycle, use **two pointers**, one *fast* traverses 2 nodes each loop, *slow* traverses 1 node each loop, if such a cycle exists, slow node will meet fast node, or fast node hit the end of the linked list. 
+
+Given a list of **n** length, assume exists a cycle of **c** length, we want to find the start node of such a cycle at position **n - c**, call it **l**.
+
+* Seperate cycle into 2 parts by the meeting position such that **x + y  = c**, where **l + x** is the meeting position of fast and slow pointer.
+* Slow pointer should traverse **l + x** nodes, while fast pointer traverses total **l + x + m*c** nodes (m times full cycle + slow), and fast traverses 2 times nodes than slow, we have **2 (l + x) = l + x + m*c**.
+  * simplify the equation: **2(l + x)  = l + x + m * (x + y)**
+  * **l + x = m * (x + y)**
+  * **l = (m - 1) (x + y) + y**
+  * **l = (m - 1) * c + y**
+* Now assume we move slow pointer **l **steps further, we will stop at position **l**
+  *  **l + x + ((m - 1) * c + y) => l + (m - 1 )* c + x + y => l + m * c**
+* If at the same time, move another pointer from starting node of the list (position 0), 2 pointer will meet at position **l** which is the start point of the cycle.
+
+```java
+// add check for null values if loop is not garanteed
+while(fast != slow)
+	fast = fast.next.next;
+	slow = slow.next
+    
+// get the start node of the loop
+fast = head;
+while(fast != slow)
+	fast = fast.next;
+  slow = slow.next;
+return slow;
+```
 
 
 
@@ -189,38 +254,6 @@ Practice:
 
 * [875. Koko Eating Bananas](./Binary-Search/875.Koko-Eating-Bananas.md)
 * 
-
-## Two pointers
-
-### Detect a loop in linked list
-
-When a linked list contains a cycle, use **two pointers**, one *fast* traverses 2 nodes each loop, *slow* traverses 1 node each loop, if such a cycle exists, slow node will meet fast node, or fast node hit the end of the linked list. 
-
-Given a list of **n** length, assume exists a cycle of **c** length, we want to find the start node of such a cycle at position **n - c**, call it **l**.
-
-* Seperate cycle into 2 parts by the meeting position such that **x + y  = c**, where **l + x** is the meeting position of fast and slow pointer.
-* Slow pointer should traverse **l + x** nodes, while fast pointer traverses total **l + x + m*c** nodes (m times full cycle + slow), and fast traverses 2 times nodes than slow, we have **2 (l + x) = l + x + m*c**.
-  * simplify the equation: **2(l + x)  = l + x + m * (x + y)**
-  * **l + x = m * (x + y)**
-  * **l = (m - 1) (x + y) + y**
-  * **l = (m - 1) * c + y**
-* Now assume we move slow pointer **l **steps further, we will stop at position **l**
-  *  **l + x + ((m - 1) * c + y) => l + (m - 1 )* c + x + y => l + m * c**
-* If at the same time, move another pointer from starting node of the list (position 0), 2 pointer will meet at position **l** which is the start point of the cycle.
-
-```java
-// add check for null values if loop is not garanteed
-while(fast != slow)
-	fast = fast.next.next;
-	slow = slow.next
-    
-// get the start node of the loop
-fast = head;
-while(fast != slow)
-	fast = fast.next;
-  slow = slow.next;
-return slow;
-```
 
 
 
