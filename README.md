@@ -1,8 +1,7 @@
 ## Leetcode practices
 
- [README.md](CodingGames/README.md) 
-
-
+* [CodingGames](CodingGames/README.md) 
+*  [LeetCode75](CodingGames/leetcode75/LeetCode75.md) 
 
 ## Some common algorithms 
 

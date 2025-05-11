@@ -25,6 +25,10 @@ Practice:  [1318.Minimum-Flips-To-Make-A-Or-B-Equal-To-C.md](1318.Minimum-Flips-
 
 ## Data Structure
 
+### Stack
+
+*  [394.Decode-String.md](Data structure/394.Decode-String.md) 
+
 ### Heap
 
 By default is a min heap (root item is min). 
@@ -82,7 +86,7 @@ return slow;
 
 
 
-### Tree traversal 
+## Tree && graph 
 
 #### DFS
 
@@ -142,6 +146,14 @@ void bfs(TreeNode node) {
 Practice:
 
 * Get shortest path:  [1926.Nearest-exit-from-entrance-in-maze.md](Graph/1926.Nearest-exit-from-entrance-in-maze.md) 
+
+
+
+### Graph
+
+* **Topological sort to detect a cycle in DAG**:  [207.Course-Schedule.md](Graph/207.Course-Schedule.md) 
+
+
 
 ## Sort
 
@@ -321,6 +333,7 @@ Practice:
 
 *  [647.Palindromic-Substrings.md](Dynamic-Programming/647.Palindromic-Substrings.md) 
   * Same idea combined with the problem of backtracking  [131.Palindrome-Partitioning.md](Backtracking/131.Palindrome-Partitioning.md) 
+  * Another problem with palindromic  [5.Longest-Palindromic-Substring.md](Dynamic-Programming/5.Longest-Palindromic-Substring.md) 
 *  2d-array  [62.Unique-Paths.md](Dynamic-Programming/62.Unique-Paths.md) 
 
 ## Others
