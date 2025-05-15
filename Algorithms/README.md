@@ -118,6 +118,7 @@ Practice:
 
 * Longest path:  [1372.Longest-Zigzag-Path-In-A-Binary-Tree.md](Tree-Traversal/1372.Longest-Zigzag-Path-In-A-Binary-Tree.md) 
 *  [1466.Reorder-Routes-To-Make-All-Paths-Lead-To-The-City-Zero.md](Graph/1466.Reorder-Routes-To-Make-All-Paths-Lead-To-The-City-Zero.md) 
+*   [106.Construct-Binary-Tree-From-Inorder-And-Postorder-Traversal.md](Graph/106.Construct-Binary-Tree-From-Inorder-And-Postorder-Traversal.md) 
 
 #### BFS
 
@@ -126,16 +127,16 @@ Use queue with 2-layer loop
 ```java
 void bfs(TreeNode node) {
     if (node == null) return;
-    Queue<TreeNode> que = new LinkedList<TreeNode>();
+    Queue<TreeNode> queue = new LinkedList<TreeNode>();
     que.offer(node);
 
-    while (!que.isEmpty()) {
-        int len = que.size();
+    while (!queue.isEmpty()) {
+        int len = queue.size();
         while (len > 0) {
-            TreeNode tmpNode = que.poll();
+            TreeNode tmpNode = queue.poll();
             itemList.add(tmpNode.val);
-            if (tmpNode.left != null) que.offer(tmpNode.left);
-            if (tmpNode.right != null) que.offer(tmpNode.right);
+            if (tmpNode.left != null) queue.offer(tmpNode.left);
+            if (tmpNode.right != null) queue.offer(tmpNode.right);
             len--;
         }
         resList.add(itemList);
@@ -203,13 +204,13 @@ merge the array from left to middle and middle to right
 
 
 
+
+
 | Name          | Complexity | Notes |
 | ------------- | ---------- | ----- |
 | Binary search | O(logn)    |       |
 | Fibonacci     | O(logn)    |       |
 | Backtracking  | O(n*2^n)   |       |
-
-
 
 ## Search
 
@@ -265,7 +266,6 @@ while(left < right){
 Practice:
 
 * [875. Koko Eating Bananas](./Binary-Search/875.Koko-Eating-Bananas.md)
-* 
 
 
 
@@ -334,7 +334,10 @@ Practice:
 *  [647.Palindromic-Substrings.md](Dynamic-Programming/647.Palindromic-Substrings.md) 
   * Same idea combined with the problem of backtracking  [131.Palindrome-Partitioning.md](Backtracking/131.Palindrome-Partitioning.md) 
   * Another problem with palindromic  [5.Longest-Palindromic-Substring.md](Dynamic-Programming/5.Longest-Palindromic-Substring.md) 
-*  2d-array  [62.Unique-Paths.md](Dynamic-Programming/62.Unique-Paths.md) 
+*  2d-array but can be simplified into 1d-array
+   *   [62.Unique-Paths.md](Dynamic-Programming/62.Unique-Paths.md) 
+   *   [1143.Longest-Common-Subsequence.md](Dynamic-Programming/1143.Longest-Common-Subsequence.md) 
+
 
 ## Others
 
