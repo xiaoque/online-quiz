@@ -119,6 +119,7 @@ Practice:
 * Longest path:  [1372.Longest-Zigzag-Path-In-A-Binary-Tree.md](Tree-Traversal/1372.Longest-Zigzag-Path-In-A-Binary-Tree.md) 
 *  [1466.Reorder-Routes-To-Make-All-Paths-Lead-To-The-City-Zero.md](Graph/1466.Reorder-Routes-To-Make-All-Paths-Lead-To-The-City-Zero.md) 
 *   [106.Construct-Binary-Tree-From-Inorder-And-Postorder-Traversal.md](Graph/106.Construct-Binary-Tree-From-Inorder-And-Postorder-Traversal.md) 
+*    [124.Binary-Tree-Maximum-Path-Sum.md](Tree-Traversal/124.Binary-Tree-Maximum-Path-Sum.md) 
 
 #### BFS
 
@@ -266,6 +267,7 @@ while(left < right){
 Practice:
 
 * [875. Koko Eating Bananas](./Binary-Search/875.Koko-Eating-Bananas.md)
+* [153.Find-Minimum-In-Rotated-Sorted-Array.md](Binary-Search/153.Find-Minimum-In-Rotated-Sorted-Array.md) 
 
 
 
