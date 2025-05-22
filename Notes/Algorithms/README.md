@@ -268,6 +268,7 @@ Practice:
 
 * [875. Koko Eating Bananas](./Binary-Search/875.Koko-Eating-Bananas.md)
 * [153.Find-Minimum-In-Rotated-Sorted-Array.md](Binary-Search/153.Find-Minimum-In-Rotated-Sorted-Array.md) 
+*  [74.Search-A-2d-Matrix.md](Binary-Search/74.Search-A-2d-Matrix.md) 
 
 
 
