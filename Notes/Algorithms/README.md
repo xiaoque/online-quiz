@@ -288,10 +288,14 @@ Practice:
 
 * [875. Koko Eating Bananas](./Binary-Search/875.Koko-Eating-Bananas.md)
 * [153.Find-Minimum-In-Rotated-Sorted-Array.md](Binary-Search/153.Find-Minimum-In-Rotated-Sorted-Array.md) 
+<<<<<<< HEAD
 <<<<<<< HEAD:Notes/Algorithms/README.md
 *  [74.Search-A-2d-Matrix.md](Binary-Search/74.Search-A-2d-Matrix.md) 
 =======
 >>>>>>> 6f2770b (Update notes):Algorithms/README.md
+=======
+*  [74.Search-A-2d-Matrix.md](Binary-Search/74.Search-A-2d-Matrix.md) 
+>>>>>>> 8673bab (refactor folder)
 
 
 
