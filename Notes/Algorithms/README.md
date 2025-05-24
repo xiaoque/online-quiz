@@ -54,6 +54,26 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder())
 
 #### Revert a linked list
 
+To revert list, the linked list is actually separated into 2 list during the operation. `prev -> curr -> next` is update into: 
+
+* The part reverted `curr -> prev`
+* The part need to be revert `next -> next.next ...`
+
+At each pass, move `next` points to `curr` node and keep `next.next` node for next iteration.
+
+```java
+while(curr != null){
+    next = curr.next;            
+    curr.next = prev;
+    prev = curr;
+    curr = next;
+}
+```
+
+Practice: 
+
+*  [24.Swap-Nodes-In-Pairs.md](Data-structure/24.Swap-Nodes-In-Pairs.md) 
+
 #### Detect a loop in linked list
 
 When a linked list contains a cycle, use **two pointers**, one *fast* traverses 2 nodes each loop, *slow* traverses 1 node each loop, if such a cycle exists, slow node will meet fast node, or fast node hit the end of the linked list. 
