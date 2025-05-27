@@ -2,3 +2,6 @@
 .classpath
 settings.json
 .vscode/
+*/.idea/
+*.iml
+CodingGames/out/

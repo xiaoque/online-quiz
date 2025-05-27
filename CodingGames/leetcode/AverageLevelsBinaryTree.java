@@ -10,19 +10,19 @@ import java.util.Queue;
  */
 
 //Definition for a binary tree node.
-class TreeNode {
+class BinaryTreeNode {
     int val;
-    TreeNode left;
-    TreeNode right;
+    BinaryTreeNode left;
+    BinaryTreeNode right;
 
-    TreeNode() {
+    BinaryTreeNode() {
     }
 
-    TreeNode(int val) {
+    BinaryTreeNode(int val) {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    BinaryTreeNode(int val, BinaryTreeNode left, BinaryTreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
@@ -30,14 +30,14 @@ class TreeNode {
 }
 
 public class AverageLevelsBinaryTree {
-    public List<Double> averageOfLevels(TreeNode root) {
+    public List<Double> averageOfLevels(BinaryTreeNode root) {
         List<Double> average = new ArrayList<>();
 
         // traverse the node using bfs
-        TreeNode curr;
+        BinaryTreeNode curr;
         int totSize = 0;
         double sum = 0;
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<BinaryTreeNode> queue = new LinkedList<>();
         queue.add(root);
 
         while (!queue.isEmpty()) {

@@ -109,11 +109,10 @@ public class InterThreadCommunication {
         public List<Integer> readArray() {
             if (!scanner.hasNext())
                 return null;
-            List<Integer> result = Arrays.stream(scanner.nextLine().split(","))
+
+            return Arrays.stream(scanner.nextLine().split(","))
                     .map(Integer::valueOf)
                     .collect(Collectors.toList());
-
-            return result;
         }
     }
 
@@ -148,7 +147,7 @@ public class InterThreadCommunication {
                     e.printStackTrace();
                 }
             }
-            if (queue.size() == 0 && isTerminated)
+            if (queue.isEmpty() && isTerminated)
                 return null;
 
             if (queue.size() == 1)
