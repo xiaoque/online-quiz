@@ -25,32 +25,80 @@ Practice:  [1318.Minimum-Flips-To-Make-A-Or-B-Equal-To-C.md](1318.Minimum-Flips-
 
 ## Data Structure
 
-### Stack
+### Stack & Queue
 
-*  [394.Decode-String.md](Data structure/394.Decode-String.md) 
+* Stack, LIFO
+
+  ```java
+  Stack<Integer> stack = new Stack<>();
+  stack.push(1);
+  stack.pop();
+  ```
+
+* Queue, FIFO
+
+  ```java
+  Queue<Integer> queue = new LinkedList<>();
+  queue.offer(1);
+  queue.poll();
+  ```
+
+* Deque, an interface that supports double-ended queue (can be served as a queue or a stack). 
+
+  ```java
+  Deque<String> stack = new ArrayDeque<>();
+  stack.push("Item 1");
+  stack.pop();
+  // or
+  stack.addFirst("Item 2");
+  stack.removeFirst();
+  ```
+
+  * `Stack`  is synchronized, meaning it has overhead for thread safety that is often unnecessary. `ArrayDeque` is not synchronized, making it faster for single-threaded use cases. For a thread-safe alternative, `ConcurrentLinkedDeque` is preferred.
+
+  ```java
+  Queue<String> queue = new ArrayDeque<>();
+  queue.offer("Task 1");
+  queue.poll();
+  // or
+  queue.add("Task 1");
+  queue.remove();
+  ```
+
+  * `ArrayDeque` is generally faster in practice due to better cache locality. Array elements are stored contiguously in memory, which CPUs can access more efficiently than traversing pointers in a `LinkedList`.
 
 ### Heap
 
-By default is a min heap (root item is min). 
+A queue but keep a logical order of elements. By default, PriorityQueue is a min heap (root item is min). The insert and deletion operations are of time complexity O(logn).
 
 ```java
 PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
-
-// find median in array [1, 3, 5, 9, 6]
-// minHeap : [1, 3, 5]
-// maxHeap : [9, 6]
 ```
 
-### Deque
+Use case: **find median in an array**
+
+* Maintain a min heap (right half) and a max heap (left half).
+* Balance the 2 heaps with restriction: `minHeap.length() + 1 >= maxHeap`
+
+
 
 ### Linkded list
 
+#### Find the middle node for a linked list
 
+With a fast and a slow pointer, fast visits 2 nodes at a time, when fast reaches the end node, slow will be a middle of the linked list, at index `n / 2` or `(n - 1) / 2`.
 
-#### Find middle node for a linked list
+```java
+Node slow = head;
+Node fast = head;
+while (fast != null && fast.next != null) {
+    fast = fast.next.next;
+    slow = slow.next;
+}
+```
 
-
+**Tips**: Add a dummy node as head to keep track of head node.
 
 #### Revert a linked list
 
@@ -110,9 +158,10 @@ return slow;
 
 #### DFS
 
-3 orders, normally use recursive, or stack
+Traversal algorithms, often applied to problems like finding the longest path. Three primary orders (pre-order, in-order, and post-order), depending on when the root node is visited. implemented using recursion or an iterative approach with a stack.
 
 ```java
+// visit root node first
 void preorder(args...) {
   if (root == null)
       return;
@@ -121,12 +170,14 @@ void preorder(args...) {
   preorder(root.right, result);
 }
 
+// visit root node in between children
 void inorder(args..){
   inorder(root.left);
   result.add(root.val);
   inorder(root.right);
 }
 
+// visit root node after children
 void postorder(args...){
   postorder(root.left);
   postorder(root.right);
@@ -177,61 +228,84 @@ Practice:
 
 
 
+### Trie
+
+A special tree structure for storing and finding strings. Each node represents a character, its children nodes represent the character in next index, node can also maintain informations like a boolean `isEndOfWord`  or a counter `passThrough` to simplify the traversal. Insertion, searching or prefix searching are of time complexity O(n), where n is the length of the string.
+
+```java
+class Node {
+  Node[] children = new Node[26];
+  boolean isEndOfWord = false;
+  int passThrough = 0;
+}
+```
+
+
+
 ## Sort
 
-|Name|Complexity| space | Notes|
-|---| ---|---|---|
-|Bubble sort| N*N| O(1)||
-|Selection sort| N*N| O(1)|for array, not stable, too much comparison|
-|Insertion sort|N*N|O(1)|more stable than selection|
-|Merge sort| nlogn|n||
-|Quick sort|nlogn|log n|
+|Name|Time Complexity| Space Complexity |
+|---| ---|---|
+|Bubble sort| O(n ^ 2) | O(1)|
+|Selection sort| O(n ^ 2) | O(1)|
+|Insertion sort|O(n ^ 2)|O(1)|
+|Merge sort| O(n logn) |O(n)|
+|Quick sort|O(n logn)|O(logn)|
 
 #### Bubble sort
 
+Sort the array from end, at each iterate finds the current largest elment and put it at the end of the array.
+
 ```java
 for(i to length - 1)
-	for(j to length-i-1)
-    	swap j with j+1
+	for(j to length - i - 1)
+    if arr[j] > arr[j + 1]
+    	swap arr[j], arr[j + 1]
+  end for
+end for
 ```
 #### Insertion sort
+
+Start the iteration from 2nd element, keep adjusting elements before `i` until find a place to insert `arr[i]`.
+
 ```java
-for( i to length)
-	for( i-1 to 0)
-    	if a(j) > a(i), a(j+1) = a(j);
-    set a(i)
+for( i to length - 1)
+  key = arr[i]
+  j = i - 1
+  while j >= 0 and A[j] > key do
+    arr[j + 1] = arr[j]
+    j = j - 1
+  end while
+  arr[j + 1] = key
+end for
 ```
 #### Merge sort
 
+Recursively dividing the array into two halves, then recursively sorting the two halves and merging them back together to obtain the sorted array.
+
 ```java
-if right <= left return 0;
+function sort(arr, left, right)
+  if right <= left then return
+  end if
 
-middle = left + (right - left)/2
-leftArr = sort(arr, left, middle);
-rightArr = sort(arr, middle + 1, right);
-merge(arr, left, middle, right);
+  middle = left + (right - left) / 2
 
-function merge(arr, left, middle, right) {
-	if arr.left < arr.right
-    	temp.add(left)
-    else temp.add(right)
-    //copy the rest in left and right into temp
-    //copy temp to arr
-}
-merge the array from left to middle and middle to right
+  sort(arr, left, middle)
+  sort(arr, middle + 1, right)
+
+  merge(arr, left, middle, right)
+end function
+
+function merge(arr, left, middle, right) 
+	tempList = merge arr[left, middle] and arr[middle + 1, right]
+  copy tempList to arr[left, right]
+end function
 ```
-#### Quick sort
 
 
 
 
 
-
-| Name          | Complexity | Notes |
-| ------------- | ---------- | ----- |
-| Binary search | O(logn)    |       |
-| Fibonacci     | O(logn)    |       |
-| Backtracking  | O(n*2^n)   |       |
 
 ## Search
 
@@ -324,27 +398,26 @@ Practice:
 
 ## Backtracking 
 
-Try to convert the problem into tree traversal, where possible choices are subnodes of a tree, the problem is to find a valid path in the tree. Recursively call bk func is to add a node to the path, for-loop is to visit all siblings.
+Convert the problem into tree traversal, where possible choices are subnodes of a tree, the problem is to find a valid path in the tree. Recursively call bk func is to add a node to the path, for-loop is to visit all siblings. Time complexity `O(n ^ h)`, where `n` is the number of subnodes for each node, `h` is the depth of the tree.
 
 Steps for backtracking: 
 
 * **Define args in the function**, besides a list to store current path and a list to store valid path, maybe need an index or currentSum to store current state.
-* **Define end condition**, how to define if current path is valid, then stop the recursion
-* **Range of current loop**, if an item can be reused, is it possible to reduce loop size, the parameters to next level recursion.
+* **Define end condition**, how to verify if current path is valid, stop the recursion
+* **Range of current loop**, input parameters for recursion.
 
 ```java
-void backtracking (args) {
-    if (satisfied) {
-        result.add(current);
-        return;
-    }
-  	// if dup is allowed, bk with index, otherwise bk(index+1)
-    for (siblings of current node) {
-      current += val;
-      backtracking(args...);
-      current -= val;
-    }
-}
+function backtracking (args, current, path, result)
+  if (current satisfy condition)
+    result.add(path)
+    return
+    
+  for each possible choice
+    apply(choice);
+    backtracking(args, choice, path, result);
+    remove(choice);
+  end for
+end function
 ```
 
 Practice:
@@ -354,9 +427,11 @@ Practice:
 
 ## Dynamic Programming
 
-* Find the meaning of dp[i]
-* Get the formula of dp[i], eg., dp[i] = max( dp[i-1], dp[j] + val). For i, either take or not take
-* Define initial values dp[0]...
+Steps for DP
+
+* Define the meaning of dp[i].
+* Get the formula of dp[i], eg., dp[i] = max(dp[i-1], dp[j] + val).
+* Define initial values dp[0].
 * Iterate from begin or from end
 
 Practice:
