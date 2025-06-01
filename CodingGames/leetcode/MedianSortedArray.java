@@ -30,9 +30,7 @@ public class MedianSortedArray {
         return (m + n) % 2 == 1 ? curr : 1.0 * (prev + curr) / 2;
     }
 
-    // use binary search
-    public double findMedianSortedArrays1(int[] nums1, int[] nums2) {
-    }
+
 
     public static void main(String[] args) {
 

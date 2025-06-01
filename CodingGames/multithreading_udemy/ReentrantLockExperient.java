@@ -15,8 +15,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @date 2025.04.20
  */
 public class ReentrantLockExperient {
-    private static int MAX_PRICE = 999;
-    private static Random random = new Random();
+    private static final int MAX_PRICE = 999;
+    private static final Random random = new Random();
 
     public static void main(String[] args) {
         manipulateDatabase(new InventoryDatabaseReadWirteLock());
@@ -77,7 +77,7 @@ public class ReentrantLockExperient {
     }
 
     private static class InventoryDatabaseReentrantLock extends InventoryDatabase {
-        private Lock lock = new ReentrantLock();
+        private final Lock lock = new ReentrantLock();
 
         @Override
         public int getNumberOfItems(int lowPrice, int highPrice) {
@@ -116,9 +116,9 @@ public class ReentrantLockExperient {
     }
 
     private static class InventoryDatabaseReadWirteLock extends InventoryDatabase {
-        private ReentrantReadWriteLock rwLock = new ReentrantReadWriteLock();
-        private Lock readLock = rwLock.readLock();
-        private Lock writeLock = rwLock.writeLock();
+        private final ReentrantReadWriteLock rwLock = new ReentrantReadWriteLock();
+        private final Lock readLock = rwLock.readLock();
+        private final Lock writeLock = rwLock.writeLock();
 
         public int getNumberOfItems(int lowPrice, int highPrice) {
             readLock.lock();
