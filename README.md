@@ -3,9 +3,13 @@
 * [CodingGames](CodingGames/README.md) 
 *  [LeetCode75](CodingGames/leetcode75/LeetCode75.md) 
 
-## Some common algorithms 
+## Practices by algorithms.
 
- [README.md](Algorithms/README.md) 
+![](/Users/que/Documents/Workspace/CodeCache/img/big-o-cheat-sheet-poster.png)
+
+
+
+ [README.md](Notes/Algorithms/README.md) 
 
 
 
