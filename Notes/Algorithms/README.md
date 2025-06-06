@@ -1,3 +1,55 @@
+## Tips
+
+**Pre-check**:
+
+* Input values and size
+  * For numbers, within `int` values or use `long` for computing
+  * For string, convert into lower cases, or special characters are allowed
+  * For trees / graphs, node values are unique or not
+  * For arrays, sorted array or not, wether the values can be changed (update value to mark visited, etc.)
+* Return value when `null` or only one input
+
+
+
+**Algo**:
+
+* String
+  * Palindrome: reverse string to compare, start from center
+* Array
+  * Use prefix sum / product to reduce time complexity
+  * **Subsequence** : non-continue elements in the array; **subarray** : continuous elements in the array
+  * Use `set` or `map` to remove duplicates
+  * For `min` / `max` problems
+    * Greedy: compute a local min / max
+    * Mono stack: next smaller / next greater
+  * Sliding window related when all nums are positive, otherwise use DP
+  * Intervals related problems: sort by start or end first
+  * Stack / queue : verify if null before `pop` / `poll`
+* To traversal a graph / tree / 2d-array
+  * DFS: 3 order, backtracking
+    * Avoid to use recursion when depth is too big, might have stack overflow
+  * To find a shortest path / minimal operations to XXX, use BFS with queue
+  * Use an additional array to store visited or modify values at place (special value '*' or 0)
+* Heap: k most large / small value
+* Mono stack / queue
+  * First element smaller than current, pop from stack when current < peek
+  * First element greater than current, pop while current > peek
+* DP: set the dp array size as length + 1, easier to initialize values when `i = 0`.
+* Linked list: 
+  * Use dummy node as head when the head node might change, also dummy node as tail when the tail node might change.
+  * Consider reverse linked list, find last N element, etc.
+  * Slow / fast pointer to find mid node 
+    * Mid node is (n - 1) / 2 or (n + 1) / 2 when length is even
+    * If fast starts from head, consider the case when list only contains 2 nodes. (Stop the loop when `fast == null || fast.next == null` )
+
+**Improvement**:
+
+* Brute force O(n) -> O(logn), normally use binary search
+* DP space complexity improvement: 1d-array -> O(1) previous results, 2d-array -> 1d-array
+* Backtracking: reduce recursive calls
+
+
+
 ## Bit manipulations
 
 | Operation            | Symbol | Description                                     |
@@ -435,8 +487,3 @@ Practice:
 *  2d-array but can be simplified into 1d-array
    *   [62.Unique-Paths.md](Dynamic-Programming/62.Unique-Paths.md) 
    *   [1143.Longest-Common-Subsequence.md](Dynamic-Programming/1143.Longest-Common-Subsequence.md) 
-
-
-## Others
-
-## 
